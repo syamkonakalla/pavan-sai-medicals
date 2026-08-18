@@ -70,7 +70,7 @@ with scan_tab:
 
         with col1:
             image = Image.open(io.BytesIO(file_bytes))
-            st.image(image, caption="Uploaded Invoice", use_column_width=True)
+            st.image(image, caption="Uploaded Invoice", use_container_width=True)
 
         with col2:
             if st.button("🚀 Process & Sync", type="primary"):
